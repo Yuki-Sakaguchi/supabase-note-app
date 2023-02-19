@@ -14,7 +14,7 @@ export const useMutateNote = () => {
     },
     {
       onSuccess: () => {
-        revalidateList(); // 一覧ページのISRのためのAPIを実行
+        // revalidateList(); // 一覧ページのISRのためのAPIを実行
         reset();
         alert('Successfully completed !!');
       },
@@ -37,8 +37,8 @@ export const useMutateNote = () => {
     },
     {
       onSuccess: (res) => {
-        revalidateList(); // 一覧ページのISRのためのAPIを実行
-        revalidateSingle(res[0].id); // 個別ページのISRのためのAPIを実行
+        // revalidateList(); // 一覧ページのISRのためのAPIを実行
+        // revalidateSingle(res[0].id); // 個別ページのISRのためのAPIを実行
         reset();
         alert('Successfully completed !!');
       },
@@ -56,7 +56,7 @@ export const useMutateNote = () => {
     },
     {
       onSuccess: () => {
-        revalidateList(); // 一覧ページのISRのためのAPIを実行
+        // revalidateList(); // 一覧ページのISRのためのAPIを実行
         reset();
         alert('Successfully completed !!');
       },
