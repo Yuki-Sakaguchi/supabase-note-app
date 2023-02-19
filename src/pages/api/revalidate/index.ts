@@ -1,10 +1,13 @@
-import type { NextApiResponse } from 'next';
+import type { NextApiRequest, NextApiResponse } from 'next';
 
 type Data = {
   revalidated: boolean;
 };
 
-export default async function handler(res: NextApiResponse<Data>) {
+export default async function handler(
+  _: NextApiRequest,
+  res: NextApiResponse<Data>
+) {
   console.log('Revalidating notes pages...');
   let revalidated = false;
   try {
