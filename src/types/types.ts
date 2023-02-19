@@ -11,7 +11,7 @@ export type Note = {
   title: string;
   content: string;
   created_at: string;
-  user_id: string;
+  user_id: string | undefined;
   comments: Comment[];
 };
 
